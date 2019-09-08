@@ -24,7 +24,7 @@ users.post('/register',(req,res) => {
     User.findOne({
         where: {
             usuario: req.body.usuario
-        }
+        } 
     })
     .then(user => {
         if (!user) {
