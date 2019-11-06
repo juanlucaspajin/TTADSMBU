@@ -34,3 +34,6 @@ conn.connect(function (error) {
 var Users = require('./routes/Users');
 app.use('/users',Users);
 
+var Characters = require('./routes/Characters');
+app.use('/user/characters', Characters);
+
